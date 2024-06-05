@@ -28,10 +28,9 @@ function Intro() {
         <p className=' m-2  ' >
             This is a Social Media Project build using React 
           
-            in this Project Social Media {"(Free API)"} is handelled.
+            in this Project Social Media {"(Free API)"} is handelled. This project includes :
             <br />
-            <br /> This project includes :
-            <br />
+   
             React router ✅
             <br />
             React redux toolkit ✅
