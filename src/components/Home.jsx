@@ -52,7 +52,7 @@ function Home() {
       </div>
 
 <div className=' m-5 p-16 backdrop-blur-1xl bg-opacity-55 text-center rounded-3xl bg-white' >
- <p className='  text-7xl  text-white font-extrabold' >Project....</p>
+ <p className='  text-5xl  text-white font-extrabold' >Project....</p>
 </div>
     </>
   )
