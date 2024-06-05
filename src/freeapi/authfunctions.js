@@ -4,7 +4,7 @@ export class Authentication {
     async CreateAccount({ email, password, role, username }) {
 
 
-        const CreateAccountMsg = await fetch(`http://localhost:8080/api/v1/users/register`, {
+        const CreateAccountMsg = await fetch(`https://apiserver-2-k95i.onrender.com/api/v1/users/register`, {
             method: 'POST',
             headers: {
                 'accept': 'application/json',
@@ -38,7 +38,7 @@ export class Authentication {
     async LoginAccount({ username, password }) {
 
 
-        const LoginAccountMsg = await fetch(`http://localhost:8080/api/v1/users/login`, {
+        const LoginAccountMsg = await fetch(`https://apiserver-2-k95i.onrender.com/api/v1/users/login`, {
             method: 'POST',
             headers: {
                 'accept': 'application/json',
@@ -71,7 +71,7 @@ export class Authentication {
     async GetCurrentAccount(accessToken) {
 
 
-        const GetCurrentAccountMsg = await fetch('http://localhost:8080/api/v1/users/current-user', {
+        const GetCurrentAccountMsg = await fetch('https://apiserver-2-k95i.onrender.com/api/v1/users/current-user', {
             method: 'GET',
             headers: {
                 'accept': 'application/json',
@@ -96,7 +96,7 @@ export class Authentication {
     async LogOutAccount(accessToken) {
 
 
-        const LogoutMsg = await fetch('http://localhost:8080/api/v1/users/logout', {
+        const LogoutMsg = await fetch('https://apiserver-2-k95i.onrender.com/api/v1/users/logout', {
             method: 'POST',
             headers: {
                 'accept': 'application/json',
@@ -120,7 +120,7 @@ export class Authentication {
 
         const accessToken = localStorage.getItem('accessToken')
 
-        const ChangePasswordMsg = await fetch('http://localhost:8080/api/v1/users/change-password', {
+        const ChangePasswordMsg = await fetch('https://apiserver-2-k95i.onrender.com/api/v1/users/change-password', {
             method: 'POST',
             headers: {
 
@@ -156,7 +156,7 @@ export class Authentication {
         formdata.append('avatar', file);
 
 
-        const UploadAvatarMsg = await fetch(`http://localhost:8080/api/v1/users/avatar`, {
+        const UploadAvatarMsg = await fetch(`https://apiserver-2-k95i.onrender.com/api/v1/users/avatar`, {
 
             method: 'PATCH',
             headers: {
