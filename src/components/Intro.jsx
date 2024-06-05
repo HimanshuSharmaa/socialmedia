@@ -40,8 +40,6 @@ function Intro() {
             <br />
             React hooks ✅
             and other important things.
-            
-            <br />
             <br />
             the social media API mainly includes:
             <br />
