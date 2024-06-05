@@ -13,7 +13,7 @@ function Signup() {
     const navigate = useNavigate()
     const [username, Setusername] = useState("")
     const [email, Setemail] = useState("")
-    const [role, Setrole] = useState("")
+    const [role, Setrole] = useState("ADMIN")
     const [password, Setpassword] = useState("")
 
 
