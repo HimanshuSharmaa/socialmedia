@@ -6,7 +6,7 @@ export class SocialMedia {
         const accessToken = localStorage.getItem('accessToken')
 
 
-        const UpdateProfileMsg = await fetch('http://localhost:8080/api/v1/social-media/profile', {
+        const UpdateProfileMsg = await fetch('https://apiserver-2-k95i.onrender.com/api/v1/social-media/profile', {
             method: 'PATCH',
             headers: {
                 'accept': 'application/json',
@@ -41,7 +41,7 @@ export class SocialMedia {
 
         const accessToken = localStorage.getItem('accessToken')
 
-        const GetProfileMsg = await fetch('http://localhost:8080/api/v1/social-media/profile', {
+        const GetProfileMsg = await fetch('https://apiserver-2-k95i.onrender.com/api/v1/social-media/profile', {
             method: 'GET',
             headers: {
                 'accept': 'application/json',
@@ -69,7 +69,7 @@ export class SocialMedia {
         formdata.append('coverImage', file);
 
 
-        const UploadCoverImageMsg = fetch('http://localhost:8080/api/v1/social-media/profile/cover-image', {
+        const UploadCoverImageMsg = fetch('https://apiserver-2-k95i.onrender.com/api/v1/social-media/profile/cover-image', {
 
             method: 'PATCH',
             headers: {
@@ -108,7 +108,7 @@ export class SocialMedia {
 
         })
 
-        const CreatePostMsg = fetch('http://localhost:8080/api/v1/social-media/posts', {
+        const CreatePostMsg = fetch('https://apiserver-2-k95i.onrender.com/api/v1/social-media/posts', {
 
             method: 'POST',
             headers: {
@@ -135,7 +135,7 @@ export class SocialMedia {
 
         const accessToken = localStorage.getItem('accessToken')
         
-        const GetAllPostsMsg = await fetch('http://localhost:8080/api/v1/social-media/posts?page=1&limit=10', {
+        const GetAllPostsMsg = await fetch('https://apiserver-2-k95i.onrender.com/api/v1/social-media/posts?page=1&limit=10', {
 
             method: 'GET',
             headers: {
@@ -158,7 +158,7 @@ export class SocialMedia {
 
         const accessToken = localStorage.getItem('accessToken')
 
-        const GetPostbyIdMsg = await fetch(`http://localhost:8080/api/v1/social-media/posts/${postid}`, {
+        const GetPostbyIdMsg = await fetch(`https://apiserver-2-k95i.onrender.com/api/v1/social-media/posts/${postid}`, {
             method: 'Get',
             headers: {
                 'accept': 'application/json',
@@ -181,7 +181,7 @@ export class SocialMedia {
 
         const accessToken = localStorage.getItem('accessToken')
 
-        const DeletePostbyId = await fetch(`http://localhost:8080/api/v1/social-media/posts/${postid}`, {
+        const DeletePostbyId = await fetch(`https://apiserver-2-k95i.onrender.com/api/v1/social-media/posts/${postid}`, {
             method: 'DELETE',
             headers: {
                 'accept': 'application/json',
@@ -203,7 +203,7 @@ export class SocialMedia {
     async LikeUnlike(postid) {
         const accessToken = localStorage.getItem('accessToken')
 
-        const LikeUnlikeMsg = await fetch(`http://localhost:8080/api/v1/social-media/like/post/${postid}`, {
+        const LikeUnlikeMsg = await fetch(`https://apiserver-2-k95i.onrender.com/api/v1/social-media/like/post/${postid}`, {
             method: 'POST',
             headers: {
                 'accept': 'application/json',
@@ -225,7 +225,7 @@ export class SocialMedia {
 
         const accessToken = localStorage.getItem('accessToken')
 
-        const BookMarkMsg = await fetch(`http://localhost:8080/api/v1/social-media/bookmarks/${postid}`, {
+        const BookMarkMsg = await fetch(`https://apiserver-2-k95i.onrender.com/api/v1/social-media/bookmarks/${postid}`, {
 
             method: 'POST',
             headers: {
@@ -251,7 +251,7 @@ export class SocialMedia {
 
         const accessToken = localStorage.getItem('accessToken')
 
-        const AddCommentMsg = await fetch(`http://localhost:8080/api/v1/social-media/comments/post/${postid}`,{
+        const AddCommentMsg = await fetch(`https://apiserver-2-k95i.onrender.com/api/v1/social-media/comments/post/${postid}`,{
 
         method:'POST',
         headers:{
@@ -283,7 +283,7 @@ export class SocialMedia {
 
         const accessToken = localStorage.getItem('accessToken')
 
-        const GetCommentMsg = await fetch(`http://localhost:8080/api/v1/social-media/comments/post/${postid}?page=1&limit=100`,{
+        const GetCommentMsg = await fetch(`https://apiserver-2-k95i.onrender.com/api/v1/social-media/comments/post/${postid}?page=1&limit=100`,{
 
         method:'GET',
         headers:{
@@ -309,7 +309,7 @@ export class SocialMedia {
 
         const accessToken = localStorage.getItem('accessToken')
 
-        const DeleteCommentMsg = await fetch(`http://localhost:8080/api/v1/social-media/comments/${postid}`,{
+        const DeleteCommentMsg = await fetch(`https://apiserver-2-k95i.onrender.com/api/v1/social-media/comments/${postid}`,{
 
         method:'DELETE',
         headers:{
@@ -334,7 +334,7 @@ export class SocialMedia {
 
         const accessToken = localStorage.getItem('accessToken')
 
-        const LikeUnlikeCommentMsg = await fetch( `http://localhost:8080/api/v1/social-media/like/comment/${postid}`,{
+        const LikeUnlikeCommentMsg = await fetch( `https://apiserver-2-k95i.onrender.com/api/v1/social-media/like/comment/${postid}`,{
         method:'POST',
         headers:{
             'accept':'application/json',
@@ -359,7 +359,7 @@ export class SocialMedia {
 
         const accessToken = localStorage.getItem('accessToken')
 
-        const UpdateCommentMsg = await fetch(` 'http://localhost:8080/api/v1/social-media/comments/${postid}`,{
+        const UpdateCommentMsg = await fetch(` 'https://apiserver-2-k95i.onrender.com/api/v1/social-media/comments/${postid}`,{
 
         method:'PATCH',
         headers:{
@@ -391,7 +391,7 @@ export class SocialMedia {
 
         const accessToken = localStorage.getItem('accessToken')
 
-        const GetMyPosts = await fetch('http://localhost:8080/api/v1/social-media/posts/get/my?page=1&limit=100',{
+        const GetMyPosts = await fetch('https://apiserver-2-k95i.onrender.com/api/v1/social-media/posts/get/my?page=1&limit=100',{
             method:'GET',
             headers:{
                 'accept':'application/json' ,
@@ -415,7 +415,7 @@ export class SocialMedia {
 
     async GetPostsbyUsername(username){
 
-        const GetPostsbyUsernameMsg = await fetch(`http://localhost:8080/api/v1/social-media/posts/get/u/${username}?page=1&limit=100`,{
+        const GetPostsbyUsernameMsg = await fetch(`https://apiserver-2-k95i.onrender.com/api/v1/social-media/posts/get/u/${username}?page=1&limit=100`,{
             method:'GET',
             headers:{
                 'accept':'application/json' ,
@@ -441,7 +441,7 @@ export class SocialMedia {
 
         const accessToken = localStorage.getItem('accessToken')
 
-        const BookMarkPostsMsg = await fetch('http://localhost:8080/api/v1/social-media/bookmarks?page=1&limit=5',{
+        const BookMarkPostsMsg = await fetch('https://apiserver-2-k95i.onrender.com/api/v1/social-media/bookmarks?page=1&limit=5',{
             method:'GET',
             headers:{
                 'accept':'application/json' ,
@@ -465,7 +465,7 @@ export class SocialMedia {
 
         const accessToken = localStorage.getItem('accessToken')
 
-        const GetprofilebyusernameMsg = fetch( `http://localhost:8080/api/v1/social-media/profile/u/${username}`,{
+        const GetprofilebyusernameMsg = fetch( `https://apiserver-2-k95i.onrender.com/api/v1/social-media/profile/u/${username}`,{
             method:'GET',
             headers:{
                 'accept':'application/json',
