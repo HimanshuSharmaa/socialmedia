@@ -55,7 +55,7 @@ function Intro() {
 
         </p>
         
-        <br />
+      
         <button onClick={()=>{
             localStorage.setItem('msgstatus',true)
             Setintro(localStorage.getItem('msgstatus'))
