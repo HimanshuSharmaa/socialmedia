@@ -21,17 +21,16 @@ function Intro() {
         <div className=' flex justify-center w-full' >
         
         
-        <div style={{zIndex:1}} className='fixed m-3 text-white p-10 rounded-3xl h-4/5 backdrop-blur-3xl bg-opacity-15 bg-white mt-20  ' >
+        <div style={{zIndex:1}} className='fixed m-3 text-white p-5 rounded-3xl h-4/5 backdrop-blur-3xl bg-opacity-15 bg-white mt-20    ' >
         
         <h1 className=' text-4xl font-bold' >Social Media.....</h1>
     
-        <p className=' m-10 text-lg' >
-            this is Social Media App build using React 
+        <p className=' m-2  ' >
+            This is a Social Media Project build using React 
           
             in this Project Social Media {"(Free API)"} is handelled.
             <br />
             <br /> This project includes :
-            <br />
             <br />
             React router ✅
             <br />
@@ -46,7 +45,6 @@ function Intro() {
             <br />
             the social media API mainly includes:
             <br />
-            <br />
             Authentication: {"(Signup , Login , Logout , Change password)"}
             <br />
             Account: {"(Uplaod avatar , Uplaod cover Image , user bio )"}
@@ -58,7 +56,7 @@ function Intro() {
 
         </p>
         
-        
+        <br />
         <button onClick={()=>{
             localStorage.setItem('msgstatus',true)
             Setintro(localStorage.getItem('msgstatus'))
