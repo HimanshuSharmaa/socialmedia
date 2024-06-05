@@ -117,21 +117,21 @@ function Account() {
 
           <div className=' bg-white text-center p-10 mt-9 mb-5 text-md flex justify-evenly flex-wrap backdrop-blur-3xl bg-opacity-45 m-5 rounded-lg ' >
 
-            <div >
+            <div className=' m-4' >
               <Link className='bg-white md:m-2 m-1 hover:bg-gray-500 w-52 p-2  hover:text-white rounded-lg text-blue-500 ' to={"/createpost"} >Share a post ➤</Link>
             </div>
-            <div >
+            <div className=' m-4' >
               <Link className='bg-white md:m-2 m-1 hover:bg-gray-500 w-52 p-2  hover:text-white rounded-lg text-blue-500 ' to={"/updateprofile"} >UpdateProfile ⚙️</Link>
 
             </div>
-            <div >
+            <div className=' m-4'  >
               <Link className='bg-white md:m-2 m-1 hover:bg-gray-500 w-52 p-2  hover:text-white rounded-lg text-blue-500 ' to={"/bookmarked"}>Book Marked ✅</Link>
             </div>
-            <div>
+            <div className=' m-4' >
               <Link className='bg-white md:m-2 m-1 hover:bg-gray-500 w-52 p-2  hover:text-white rounded-lg text-blue-500 ' to={"/changepassword"}>change password 🔒</Link>
 
             </div>
-            <div className=' text-white font-extrabold text-2xl' >
+            <div className=' text-white m-4  font-extrabold text-2xl' >
               <  Logout /> ⤼
             </div>
           </div>
