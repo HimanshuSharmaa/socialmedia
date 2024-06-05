@@ -21,7 +21,7 @@ function Intro() {
         <div className=' flex justify-center w-full' >
         
         
-        <div style={{zIndex:1}} className='fixed m-3 text-white p-5 rounded-3xl h-4/5 backdrop-blur-3xl bg-opacity-15 bg-white mt-20    ' >
+        <div style={{zIndex:1}} className='fixed m-3 text-white p-5 rounded-3xl backdrop-blur-3xl bg-opacity-15 bg-white mt-20    ' >
         
         <h1 className=' text-4xl font-bold' >Social Media.....</h1>
     
